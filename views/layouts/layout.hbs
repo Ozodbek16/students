@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<style>
+    * {
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+</style>
+
+<body>
+    {{{body}}}
+</body>
+<script>
+    document.querySelector('body').addEventListener('contextmenu',(e)=>{
+        e.preventDefault()
+    })
+</script>
+</html>
